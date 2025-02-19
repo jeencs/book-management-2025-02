@@ -1,0 +1,294 @@
+
+	/*Adding online font style*/
+	@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+	body {
+		background-color: wheat;
+		color: black;
+		font-family: "Oswald", serif;
+		}
+	
+	.task-bar {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: wheat;
+		margin-top: 10px;
+		height: 45px;
+		border: 1px solid wheat;
+		color: black;
+		font-size: 15px;
+		width: 100%;
+		}
+
+	.task-bar li a{
+		float: left;
+		width: 100%;
+		}
+
+	.task-bar .drop-bar {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 2px;
+		text-decoration: none;
+		width:90px;
+		margin-top:1px;
+		border-right: 1px solid brown;
+		border-left: 1px solide brown;
+		}
+
+	.task-bar li.drop-down-bar {
+	display: inline-block;
+	width: 7%;
+	}
+		
+	.task-bar .drop-down a{
+		display: inline-block;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		width:90px;
+		padding:2px;
+		height:25px;
+		border-right: 1px solid wheat;
+		border-left: 1px solide wheat;
+	}
+	
+	.task-bar .drop-status {
+		background-color:wheat;
+		margin-top:5px;
+		margin-left:650px;
+		height:25px;
+		color: black;
+	}
+	
+	.task-bar .drop-content a{
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 90px;
+		z-index: 1;
+		margin-top:1px;
+		margin-left:650px;
+		color: white;
+		padding: 2px;
+	}
+		
+	.task-bar li a:hover.drop-status {
+		background-color: brown;
+		color: white;
+		margin-left:80%;
+		border: 1px solid brown;
+		margin-top:1px;
+		width: 90px;
+	}
+	
+	.account-options {
+		position: absolute;
+		margin-left: 100px;
+	}
+
+	.task-bar li.drop-down {
+		display: inline-block;
+		width: 10%;
+	}
+	
+	.drop-down .drop-status:hover .drop-content {
+		display: block;
+	}
+	
+	.main-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: brown;
+		margin-top: 35px;
+		height: 45px;
+		border: 1px solid wheat;
+		color: white;
+		font-size: 15px;
+		}
+
+	.main-menu li {
+		float: left;
+		}
+
+	.main-menu li a{
+		color:white;
+		}
+
+	.main-menu .drop-btn {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px 12px;
+		text-decoration: none;
+		width:110px;
+		margin-top:1px;
+		border-right: 1px solid wheat;
+		border-left: 1px solide wheat;
+		}
+
+	.main-menu li a:hover,.main-menu .drop-down:hover .drop-btn {
+		background-color: white;
+		color: brown;
+		border: 1px solid brown;
+		margin-top:1px;
+		width: 110px;
+		}
+
+	.main-menu li.drop-down {
+	display: inline-block;
+	width: 10%;
+	}
+
+	.main-menu .drop-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		width: 140px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		margin-top:1px;
+		color: white;
+		}
+
+	.main-menu .drop-content a {
+		color: black;
+		padding: 12px 14px; 
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		}
+
+	.drop-content a:hover {
+	width: 100%;
+	background-color: #f1f1f1;
+	}
+
+	.drop-down:hover .drop-content {
+		display: block;
+		}
+
+
+	.search-box {
+		height:40px;
+		width: 90%;
+		border: none;
+		margin-left: 10%;
+		display: inline-block;
+		margin-top:-25px;
+		}
+
+	.search-input {
+		border-style: dotted;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		width: 45%;
+		height:100%;
+		margin-left: 25%;
+		margin-top: none;
+		}
+
+	.search-btn{
+		padding: 2px;
+		background-color: brown;
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		font-weight: bold;
+		height:100%;
+		width: 8%;
+		color:white;
+		}
+
+	.book-list{
+		background-color: transparent;
+		margin-top:5%;
+		margin-left: 12%;
+		padding: 2px;
+		border: none;
+		width: 1050px;
+		height: 450px;
+		font-family: "Oswald", serif;
+		}
+	.img-box {
+		background-color: transparent;
+		width: 180px;
+		border: none;
+		display: inline-block;
+		margin-top: 5px;
+		margin-right: 3px;
+		padding:5px;
+		height: 400px;
+		}
+
+	.book-description {
+		height: 80px;
+		margin-bottom: 10px;
+		}
+
+	.img-box img {
+		background-color: transparent;
+		width: 100%;
+		height: 60%;
+		}
+	.buy {
+		font-family: "Oswald", serif;
+		background-color: brown;
+		color: eee;
+		width: 60px;
+		height: 30px;
+		border-top-left-radius: 3px;
+		}
+	.details {
+		font-family: "Oswald", serif;
+		background-color: brown;
+		color: eee;
+		width: 60px;
+		height: 30px;
+		border-bottom-right-radius: 3px;
+		}
+
+	.book-details {
+		width: 1352px;
+		height: 546px;
+		border:none;
+		position: absolute;
+		top: 100px;
+		background-color: wheat;
+		margin-left: 0px;
+		margin-top:48px;
+		}
+
+	.book-image-details {
+		display: inline;
+		}
+
+	.book-details-text {
+		display: inline-block;
+		}
+
+	.book-image-details img {
+		width: 200px;
+		}
+	.item-prices {
+		background-color: brown;
+		color: eee;
+		width: 100px;
+		height: 40px;
+		border-radius: 3px;
+		}
+	.action-button{
+		margin-left: 30px;
+		}
+	.card {
+		background-color: brown;
+		color: eee;
+		width: 120px;
+		height: 30px;
+		border-bottom-right-radius: 3px;
+		margin-top:20px;
+		font-family: "Oswald", serif;
+		}

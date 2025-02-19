@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>
+			Book Management
+		</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="bar">
+			<ul class="task-bar">
+				<li class="drop-down-bar">
+					<a href="#" class="drop-bar">Store & Events</a>
+				</li>
+				<li class="drop-down-bar">
+					<a href="#" class="drop-bar">Membership</a>
+				</li>
+				<li class="drop-down-bar">
+					<a href="#" class="drop-bar"> Potcast </a>
+				</li>
+				<li class="drop-down-bar">
+					<a href="#" class="drop-bar">GiftCards</a>
+				</li>
+				<li class="drop-down">
+					<a href="#" class="drop-status">My Account</a>
+					<div class="drop-content account-options">
+						<a>Sign In</a>
+						<a>Create Account</a>
+					</div>
+				</li>
+				<li class="drop-down-bar">
+					<a href="#" class="drop-status">Wish List</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<div class="search-box">
+				<div class="search">
+					<h1 class="heading">Jeena & Hazar
+					<input type="text" class="search-input" placeholder="Type here to search" id="search">
+					<button class="search-btn" onclick="searchBook()"><i src=""><i class="fa fa-search"></i> Search </button></h1>
+				</div>
+			</div>
+			
+			<div class="menu-section">
+				<ul class="main-menu">
+					<li class="drop-down">
+						<a href="#" class="drop-btn">Books</a>
+						<div class="drop-content">
+							<a href="#">J&H Bestsellers</a>
+							<a href="#">NY Times Bestseller</a>
+							<a href="#">30% off Bestsellers</a>
+							<a href="#">All Bestseller</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn">Fiction</a>
+						<div class="drop-content">
+							<a href="#">J&H Bestsellers</a>
+							<a href="#">NY Times Bestseller</a>
+							<a href="#">30% off Bestsellers</a>
+							<a href="#">All Bestseller</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn"> Non Fiction </a>
+						<div class="drop-content">
+							<a href="#" >J&H Bestsellers</a>
+							<a href="#" >NY Times Bestseller</a>
+							<a href="#" >30% off Bestsellers</a>
+							<a href="#" >All Bestseller</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn"> eBooks </a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn"> AudioBooks </a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn"> Teens & YA </a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn"> Kids</a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn">Toys & Games</a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn">Stationary & Gifts</a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="drop-btn">Music & Movie</a>
+						<div class="drop-content">
+						<a>J&H Bestsellers</a>
+						<a>NY Times Bestseller</a>
+						<a>30% off Bestsellers</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="book-list">
+			<div class="img-box">
+				<img src="https://prodimage.images-bn.com/pimages/9781639736447_p0_v1_s600x595.jpg">
+				<p class="book-description">House of Flame and Shadow (B&N Exclusive Edition)</p>
+				<p><a href="">Sarah J. Mass</a></p>
+				<button class="buy">Buy</button>
+				<button class="details" onclick="showBookDetails()">Details</button>
+			</div>
+			<div class="img-box">
+				<img src="https://prodimage.images-bn.com/pimages/9781638932659_p0_v1_s600x595.jpg">
+				<p class="book-description">Scythe & Sparrow (B&N Exclusive Edition) (Ruinous Love Trilogy #3)</p>
+				<p><a href="">Brynne Weaver</a></p>
+				<button class="buy">Buy</button>
+				<button class="details" onclick="showBookDetails()">Details</button>
+			</div>
+			<div class="img-box" height="200px">
+				<img src="https://prodimage.images-bn.com/pimages/9780593550441_p0_v6_s600x595.jpg">
+				<p class="book-description">Deep End</p>
+				<p><a href="">Ali Hazelwood</a></p>
+				<button class="buy">Buy</button>
+				<button class="details" onclick="showBookDetails()">Details</button>
+			</div>
+			<div class="img-box">
+				<img src="https://prodimage.images-bn.com/pimages/9781401971366_p0_v8_s600x595.jpg">
+				<p class="book-description">The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About</p>
+				<p><a href="">Mel Robbins</a></p>
+				<button class="buy">Buy</button>
+				<button class="details" onclick="showBookDetails()">Details</button>
+			</div>
+			<div class="img-box">
+				<img src="https://prodimage.images-bn.com/pimages/9781649377371_p0_v9_s600x595.jpg">
+				<p class="book-description">Fourth Wing</p>
+				<p><a href="">Rebecca Yarros</a></p>
+				<button class="buy">Buy</button>
+				<button class="details" onclick="showBookDetails()">Details</button>
+			</div>
+		</div>
+		
+		<div class="book-details" style="display: none" id="book-details">
+			<div class="book-image-details">
+				<img src="https://prodimage.images-bn.com/pimages/9781639736447_p0_v1_s600x595.jpg">
+			</div>
+			<div class="book-details-text">
+				<h1> House of Flame and Shadow (B&N Exclusive Edition)</h1>
+			</div>
+			<div>
+				<p> by <a href=""> Sarah J. Mass</a></p>
+			</div>
+			<div class="prices">
+				<button class="item-prices"> BN Exclusive<br>
+				21$</button>
+				<button class="item-prices"> Hard Cover<br>
+				28.80$</button>
+				<button class="item-prices"> Paperback<br>
+				20.00$</button>
+				<button class="item-prices"> eBook<br>
+				22.40$</button>
+			</div>
+			<div class="action-button">
+				<button class="buy" onclick="closeBookDetails()"><i class="fa fa-shopping-basket"></i>Buy</button>
+				<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+			</div>
+		</div>
+	</body>
+</html>
