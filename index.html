@@ -38,7 +38,7 @@
 			<div class="search-box">
 				<div class="search">
 					<h1 class="heading">Jeena & Hazar
-					<input type="text" class="search-input" placeholder="Type here to search" id="search">
+					<input type="search" placeholder="Search here" class="search-input" id="search" />
 					<button class="search-btn" onclick="searchBook()"><i src=""><i class="fa fa-search"></i> Search </button></h1>
 				</div>
 			</div>
@@ -131,10 +131,19 @@
 				</ul>
 			</div>
 		</div>
+		<div class="ads">
+			<div class="slides">
+				<img class="mySlides" src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2025/02/24/31908_BB_1_NewReleasesThisMonth_02_24_25r2.jpg">
+				<img class="mySlides" src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2025/02/08/31757_BB_2_Sunrise_on_the_Reaping_02_08_25.jpg">
+				<img class="mySlides" src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2025/02/24/31908_BB_1_NewReleasesThisMonth_02_24_25r2.jpg">
+			</div>
+			<button class="prev" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i></button>
+			<button class="next" onclick="plusDivs(+1)"><i class="fa fa-angle-right"></i></button>
+		</div>
 		<div class="book-list">
 			<div class="img-box">
 				<img src="https://prodimage.images-bn.com/pimages/9781639736447_p0_v1_s600x595.jpg">
-				<p class="book-description">House of Flame and Shadow (B&N Exclusive Edition)</p>
+				<p class="book-description" style="background-color: green">House of Flame and Shadow (B&N Exclusive Edition)</p>
 				<p><a href="">Sarah J. Mass</a></p>
 				<button class="buy">Buy</button>
 				<button class="details" onclick="showBookDetails()">Details</button>
@@ -144,54 +153,227 @@
 				<p class="book-description">Scythe & Sparrow (B&N Exclusive Edition) (Ruinous Love Trilogy #3)</p>
 				<p><a href="">Brynne Weaver</a></p>
 				<button class="buy">Buy</button>
-				<button class="details" onclick="showBookDetails()">Details</button>
+				<button class="details" onclick="showBookDetails01()">Details</button>
 			</div>
 			<div class="img-box" height="200px">
 				<img src="https://prodimage.images-bn.com/pimages/9780593550441_p0_v6_s600x595.jpg">
 				<p class="book-description">Deep End</p>
 				<p><a href="">Ali Hazelwood</a></p>
 				<button class="buy">Buy</button>
-				<button class="details" onclick="showBookDetails()">Details</button>
+				<button class="details" onclick="showBookDetails02()">Details</button>
 			</div>
 			<div class="img-box">
 				<img src="https://prodimage.images-bn.com/pimages/9781401971366_p0_v8_s600x595.jpg">
 				<p class="book-description">The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About</p>
 				<p><a href="">Mel Robbins</a></p>
 				<button class="buy">Buy</button>
-				<button class="details" onclick="showBookDetails()">Details</button>
+				<button class="details" onclick="showBookDetails03()">Details</button>
 			</div>
 			<div class="img-box">
 				<img src="https://prodimage.images-bn.com/pimages/9781649377371_p0_v9_s600x595.jpg">
 				<p class="book-description">Fourth Wing</p>
 				<p><a href="">Rebecca Yarros</a></p>
 				<button class="buy">Buy</button>
-				<button class="details" onclick="showBookDetails()">Details</button>
+				<button class="details" onclick="showBookDetails04()">Details</button>
 			</div>
 		</div>
 		
-		<div class="book-details" style="display: none" id="book-details">
+		<div class="book-details" style="display: none" id="book-details01">
 			<div class="book-image-details">
 				<img src="https://prodimage.images-bn.com/pimages/9781639736447_p0_v1_s600x595.jpg">
 			</div>
 			<div class="book-details-text">
 				<h1> House of Flame and Shadow (B&N Exclusive Edition)</h1>
-			</div>
-			<div>
 				<p> by <a href=""> Sarah J. Mass</a></p>
+				<h4>
+					<span data-value="1" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="2" id="stars"><i class="fa fa-star-o"></i>
+					<span data-value="3" id="stars"><i class="fa fa-star-o"></i>
+					<span data-value="4" id="stars"><i class="fa fa-star-o"></i>
+					<span data-value="5" id="stars"><i class="fa fa-star-o"></i>
+					<a href="#" onclick="showReview()">Write your review</a>
+				</h4>
+				<div class="prices">
+					<button class="item-prices"> BN Exclusive<br>
+					21.00$</button>
+					<button class="item-prices"> Hard Cover<br>
+					28.80$</button>
+					<button class="item-prices"> Paperback<br>
+					20.00$</button>
+					<button class="item-prices"> eBook<br>
+					22.40$</button>
+				</div>
+				<div class="action-button">
+					<button class="buy" onclick="closeBookDetails()"><i class="fa fa-shopping-basket"></i>Buy</button>
+					<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+				</div>
 			</div>
-			<div class="prices">
-				<button class="item-prices"> BN Exclusive<br>
-				21$</button>
-				<button class="item-prices"> Hard Cover<br>
-				28.80$</button>
-				<button class="item-prices"> Paperback<br>
-				20.00$</button>
-				<button class="item-prices"> eBook<br>
-				22.40$</button>
+		</div>
+		<div class="book-details" style="display: none" id="book-details02">
+			<div class="book-image-details">
+				<img src="https://prodimage.images-bn.com/pimages/9781638932659_p0_v1_s600x595.jpg">
 			</div>
-			<div class="action-button">
-				<button class="buy" onclick="closeBookDetails()"><i class="fa fa-shopping-basket"></i>Buy</button>
-				<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+			<div class="book-details-text">
+				<h1> Scythe & Sparrow (B&N Exclusive Edition) (Ruinous Love Trilogy #3)</h1>
+				<p> by <a href=""> Brynne Weaver </a></p>
+				<h4 onclick="showReview()">
+					<span data-value="1" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="2" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="3" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="4" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="5" id="stars"><i class="fa fa-star-o"></i></span>
+					<a href="#">Write your review</a>
+				</h4>
+				<div class="prices">
+					<button class="item-prices"> BN Exclusive<br>
+					$17.00</button>
+					<button class="item-prices"> Paperback <br>
+					$19.00</button>
+					<button class="item-prices"> eBook <br>
+					$8.49</button>
+					<button class="item-prices"> Audiobook <br>
+					$0.00</button>
+				</div>
+				<div class="action-button">
+					<button class="buy" onclick="closeBookDetails01()"><i class="fa fa-shopping-basket"></i>Buy</button>
+					<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+				</div>
+			</div>
+		</div>
+		<div class="book-details" style="display: none" id="book-details03">
+			<div class="book-image-details">
+				<img src="https://prodimage.images-bn.com/pimages/9780593550441_p0_v6_s600x595.jpg">
+			</div>
+			<div class="book-details-text">
+				<h1> Deep End </h1>
+				<p> by <a href=""> Ali Hazelwood </a></p>
+				<h4 onclick="showReview()">
+					<span data-value="1" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="2" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="3" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="4" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="5" id="stars"><i class="fa fa-star-o"></i></span>
+					<a href="#">Write your review</a>
+				</h4>
+				<div class="prices">
+					<button class="item-prices"> BN Exclusive<br>
+					$30.00</button>
+					<button class="item-prices"> Hard Cover<br>
+					$17.00</button>
+					<button class="item-prices"> Paperback<br>
+					$10.99</button>
+					<button class="item-prices"> eBook<br>
+					$0.00</button>
+					<button class="item-prices"> Large Print<br>
+					$36.99</button>
+				</div>
+				<div class="action-button">
+					<button class="buy" onclick="closeBookDetails02()"><i class="fa fa-shopping-basket"></i>Buy</button>
+					<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+				</div>
+			</div>
+		</div>
+		<div class="book-details" style="display: none" id="book-details04">
+			<div class="book-image-details">
+				<img src="https://prodimage.images-bn.com/pimages/9781401971366_p0_v8_s600x595.jpg">
+			</div>
+			<div class="book-details-text">
+				<h1> The Let Them Theory: A Life-Changing Tool That Millions of People ...</h1>
+				<p> by <a href=""> Mel Robbins </a></p>
+				<h4 onclick="showReview()">
+					<span data-value="1" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="2" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="3" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="4" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="5" id="stars"><i class="fa fa-star-o"></i></span>
+					<a href="#">Write your review</a>
+				</h4>
+				<div class="prices">
+					<button class="item-prices"> Signed book<br>
+					$29.99</button>
+					<button class="item-prices"> Hardcover <br>
+					$24.99</button>
+					<button class="item-prices"> eBook <br>
+					$17.99</button>
+				</div>
+				<div class="action-button">
+					<button class="buy" onclick="closeBookDetails03()"><i class="fa fa-shopping-basket"></i>Buy</button>
+					<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card</button>
+				</div>
+			</div>
+		</div>
+		<div class="book-details" style="display: none" id="book-details05">
+			<div class="book-image-details">
+				<img src="https://prodimage.images-bn.com/pimages/9781649377371_p0_v9_s600x595.jpg">
+			</div>
+			<div class="book-details-text">
+				<h1> Fourth Wing </h1>
+				<p> by <a href=""> Rebbeca Yarros </a></p>
+				<h4 onclick="showReview()">
+					<span data-value="1" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="2" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="3" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="4" id="stars"><i class="fa fa-star-o"></i></span>
+					<span data-value="5" id="stars"><i class="fa fa-star-o"></i></span>
+					<a href="#">Write your review</a>
+				</h4>
+				<div class="prices">
+					<button class="item-prices"> Hardcover <br>
+					$29.99</button>
+					<button class="item-prices"> Paperbook <br>
+					$17.99</button>
+					<button class="item-prices"> eBook <br>
+					$14.99</button>
+					<button class="item-prices"> Audiobook <br>
+					$00.00</button>
+					<button class="item-prices"> Large Print <br>
+					$37.99</button>
+				</div>
+				<div class="action-button">
+					<button class="buy" onclick="closeBookDetails04()"><i class="fa fa-shopping-basket"></i>Buy</button>
+					<button class="card"><i class="fa fa-shopping-basket"></i> Add to Card </button>
+				</div>
+			</div>
+		</div>
+		<div class="review" id="review-page">
+			<div class="inner-review-section">
+				<div class="close-btn">
+					<button class="close-review" onclick="closeReview()"><i class="fa fa-close"></i></button>
+				</div>
+				<div class="review-content">
+					<div class="item-image">
+						<img src="https://prodimage.images-bn.com/pimages/9781639736447_p0_v1_s600x595.jpg">
+						<p>Hay House Inc. - The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About</p>
+					</div>
+					<div class="review-details">
+						<h2>My Review for The Let Them Theory: A Life-Changing Tool That Millions of People...</h2>
+						<div class="rating-req">
+							<h4>Required fields are marked with *</h4>
+							<div class="rating-stars">
+								<p> Overall Rating*
+								<button class="star"><span data-value="1" id="stars"><i class="fa fa-star-o"></i></span></button>
+								<button class="star"><span data-value="2" id="stars"><i class="fa fa-star-o"></i></span></button>
+								<button class="star"><span data-value="3" id="stars"><i class="fa fa-star-o"></i></span></button>
+								<button class="star"><span data-value="4" id="stars"><i class="fa fa-star-o"></i></span></button>
+								<button class="star"><span data-value="5" id="stars"><i class="fa fa-star-o"></i></span></button>
+								Click to Rate!
+								</p>
+							</div>
+							<div class="review-title">
+								<h3>Review Title<br>
+								<input type="text" placeholder="Example: Great Features! (Maximum 50 Characters)" id="review-title"/></h3>
+							</div>
+							<div class="comment">
+								<p>Review</br>
+								<textarea placeholder=" Example: I bought this a month ago and I am so happy I did this ..." id="review-text" rows="10" cols="90"></textarea>
+								<label for="upload-photo" class="upload-btn">Add Photo</label>
+								<input type="file" id="upload-photo" accept="image/*">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</body>

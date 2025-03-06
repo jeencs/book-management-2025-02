@@ -4,8 +4,8 @@
 	body {
 		background-color: wheat;
 		color: black;
-		font-family: "Oswald", serif;
-		}
+		font-family: "Oswald";
+	}
 	
 	.task-bar {
 		list-style-type: none;
@@ -19,12 +19,12 @@
 		color: black;
 		font-size: 15px;
 		width: 100%;
-		}
+	}
 
 	.task-bar li a{
 		float: left;
 		width: 100%;
-		}
+	}
 
 	.task-bar .drop-bar {
 		display: inline-block;
@@ -36,14 +36,14 @@
 		margin-top:1px;
 		border-right: 1px solid brown;
 		border-left: 1px solide brown;
-		}
+	}
 
 	.task-bar li.drop-down-bar {
-	display: inline-block;
-	width: 7%;
+		display: inline-block;
+		width: 7%;
 	}
 		
-	.task-bar .drop-down a{
+	.task-bar .drop-down a {
 		display: inline-block;
 		color: black;
 		text-align: center;
@@ -100,24 +100,24 @@
 	
 	.main-menu {
 		list-style-type: none;
-		margin: 0;
+		margin: 2px;
 		padding: 0;
 		overflow: hidden;
 		background-color: brown;
-		margin-top: 35px;
+		margin-top: 40px;
 		height: 45px;
-		border: 1px solid wheat;
+		border: 1px solid black;
 		color: white;
 		font-size: 15px;
 		}
 
 	.main-menu li {
 		float: left;
-		}
+	}
 
 	.main-menu li a{
 		color:white;
-		}
+	}
 
 	.main-menu .drop-btn {
 		display: inline-block;
@@ -126,10 +126,10 @@
 		padding: 10px 12px;
 		text-decoration: none;
 		width:110px;
-		margin-top:1px;
+		margin-top:3px;
 		border-right: 1px solid wheat;
 		border-left: 1px solide wheat;
-		}
+	}
 
 	.main-menu li a:hover,.main-menu .drop-down:hover .drop-btn {
 		background-color: white;
@@ -137,11 +137,11 @@
 		border: 1px solid brown;
 		margin-top:1px;
 		width: 110px;
-		}
+	}
 
 	.main-menu li.drop-down {
-	display: inline-block;
-	width: 10%;
+		display: inline-block;
+		width: 10%;
 	}
 
 	.main-menu .drop-content {
@@ -153,7 +153,7 @@
 		z-index: 1;
 		margin-top:1px;
 		color: white;
-		}
+	}
 
 	.main-menu .drop-content a {
 		color: black;
@@ -161,16 +161,16 @@
 		text-decoration: none;
 		display: block;
 		text-align: left;
-		}
+	}
 
 	.drop-content a:hover {
-	width: 100%;
-	background-color: #f1f1f1;
+		width: 100%;
+		background-color: #f1f1f1;
 	}
 
 	.drop-down:hover .drop-content {
 		display: block;
-		}
+	}
 
 
 	.search-box {
@@ -179,10 +179,10 @@
 		border: none;
 		margin-left: 10%;
 		display: inline-block;
-		margin-top:-25px;
-		}
+		margin-top:-30px;
+	}
 
-	.search-input {
+	#search {
 		border-style: dotted;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
@@ -190,7 +190,7 @@
 		height:100%;
 		margin-left: 25%;
 		margin-top: none;
-		}
+	}
 
 	.search-btn{
 		padding: 2px;
@@ -201,8 +201,53 @@
 		height:100%;
 		width: 8%;
 		color:white;
-		}
+	}
 
+	.ads{
+		max-width: 1486px;
+		position: relative;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	.slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+		
+	.mySlides {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+	
+	.ads button {
+		top: 40%;
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		margin-top: 0px;
+		background-color: transparent;
+		font-size: 40px;
+		border: none;
+	}
+	
+	.prev {
+            padding: 10px;
+            cursor: pointer;
+			margin-left: 20px;
+	}
+	
+	.next {
+            padding: 10px;
+            cursor: pointer;
+			margin-left: 96%;
+			color: black;
+	}
+	
+	div .slides :hover {
+		background-color: #EAEDEC;
+	}
+	
 	.book-list{
 		background-color: transparent;
 		margin-top:5%;
@@ -212,7 +257,8 @@
 		width: 1050px;
 		height: 450px;
 		font-family: "Oswald", serif;
-		}
+	}
+	
 	.img-box {
 		background-color: transparent;
 		width: 180px;
@@ -222,18 +268,23 @@
 		margin-right: 3px;
 		padding:5px;
 		height: 400px;
-		}
+	}
+		
+	.hide-img-box {
+		display: none;
+	}
 
 	.book-description {
 		height: 80px;
 		margin-bottom: 10px;
-		}
+	}
 
 	.img-box img {
 		background-color: transparent;
 		width: 100%;
 		height: 60%;
-		}
+	}
+	
 	.buy {
 		font-family: "Oswald", serif;
 		background-color: brown;
@@ -241,7 +292,8 @@
 		width: 60px;
 		height: 30px;
 		border-top-left-radius: 3px;
-		}
+	}
+	
 	.details {
 		font-family: "Oswald", serif;
 		background-color: brown;
@@ -249,18 +301,18 @@
 		width: 60px;
 		height: 30px;
 		border-bottom-right-radius: 3px;
-		}
+	}
 
 	.book-details {
 		width: 1352px;
-		height: 546px;
+		height: 525px;
 		border:none;
 		position: absolute;
 		top: 100px;
 		background-color: wheat;
 		margin-left: 0px;
-		margin-top:48px;
-		}
+		margin-top:55px;
+	}
 
 	.book-image-details {
 		display: inline;
@@ -268,10 +320,13 @@
 
 	.book-details-text {
 		display: inline-block;
+		margin-left: 30px;
 		}
 
 	.book-image-details img {
-		width: 200px;
+		width: 300px;
+		height: 400px;
+		margin-top: 10px;
 		}
 	.item-prices {
 		background-color: brown;
@@ -281,7 +336,7 @@
 		border-radius: 3px;
 		}
 	.action-button{
-		margin-left: 30px;
+		margin-left: 40px;
 		}
 	.card {
 		background-color: brown;
@@ -292,3 +347,190 @@
 		margin-top:20px;
 		font-family: "Oswald", serif;
 		}
+	
+	.rated-book-title {
+		border:1px solid black;
+		margin-left: 120px;
+		width: 640px;
+		height: 50px;
+	}
+	.rating {
+		border:none;
+		margin-left: 100px;
+		width: 640px;
+		height: 50px;
+	}
+	
+	
+	/** This styling is related to the review component */
+	
+	.review {
+		width: 100%;
+		background-color: rgba(100,100,100,0.8);
+		min-height: 800px;
+		overflow-y: scroll;
+		position: absolute;
+		display:none;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		height: 100%;
+	}
+	
+	.close-review {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 165px;
+		margin-top: 20px;
+		font-size: 20px;
+		background-color: wheat;
+		border: none;
+	}
+	
+	.inner-review-section {
+		border: 2px solid black;
+		width: 1200px;
+		background-color: white;
+		margin-left: 130px;
+		margin-top: 100px;
+		height:1300px;
+	}
+	
+	.review-content {
+		display: flex;
+	}
+		
+	.item-image {
+		width: 300px;
+		display: inline;
+		margin-left:0px;
+		background: #DFDEDB;
+		height: 1300px;
+	}
+	
+	.item-image img {
+		
+		width: 180px;
+		height: 260px;
+		border:none;
+		margin-left: 40px;
+		margin-top:40px;
+	}
+	
+	.item-image p {
+		margin-left: 8%;
+		text-align: justify;
+		margin-right: 8%;
+	}
+	
+	.review-details{
+		width:80%;
+	}
+	
+	.review-details h2{
+		margin-top:20px;
+		margin-bottom: 0px;
+		width: 100%;
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	
+	.rating-req {
+		width: 100%;
+		height: 100%;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	
+	.rating-req h4{
+		margin-bottom: 10px;
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	
+	.rating-stars {
+		margin-left: 20px;
+		border-bottom: 1px solid brown;
+		border-top: 1px solid brown;
+		width: 100%;
+		height: 70px;
+		margin-top: 0px;
+		margin-left: 0px;
+		font-size: 17px;
+		word-spacing: 2px;
+	}
+	
+	.rating-stars p{
+		margin-left: 20px;
+	}
+	
+	.star {
+		font-size: 30px;
+		background-color: wheat;
+		border: 1px solid brown;
+	}
+	
+	div .review-title {
+		width: 100%;
+		height: 100px;
+		border-bottom: 1px solid brown;
+		font-size: 15px;
+		font-family: "Oswald";
+	}
+	
+	.review-title h3{
+		margin-top: 0px;
+		padding-top: 10px;
+		margin-left: 20px;
+	}
+	.review-title input{
+		margin-top: 15px;
+		width: 1200px;
+	}
+	
+	div.review-title:hover{
+		background-color: wheat;
+		color: black;
+	}
+	
+	.rating-req input {
+		width: 700px;
+		height: 35px;
+		border: 1px solid brown;
+		border-radius: 5px;
+	}
+	
+	.comment {
+		margin-left: 0px;
+		padding-top: 5px;
+		font-size: 15px;
+		margin-top: 0px;
+		border-bottom: 1px solid brown;
+	}
+	
+	.comment p {
+		margin-left: 20px;
+	}
+	.comment textarea{
+		margin-top: 10px;
+		border-radius: 5px;
+	}
+	
+	.upload-btn {
+		display: inline-block;
+		background: wheat;
+		padding: 8px;
+		margin-top: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	#upload-photo {
+		display: none;
+	}
+	
+	
+	.book-description:hover {
+		background-color: black;
+	}
